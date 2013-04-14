@@ -1,0 +1,671 @@
+/* reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:  bold;
+}
+
+body {
+	background-color: white;
+	line-height:1.5;
+	background-image: url(../images/108750-0.png);
+}
+
+#puzzfolio {
+	margin: 0 auto; /* centrarlo */
+	margin-top: 20px;
+	padding: 0;
+	border: 3px solid #e6e6e6;
+	background-color: #dddddd;
+	width: 600px;
+	height: 600px;
+	overflow: hidden;
+	display: block;
+	position: relative;	
+	cursor: pointer;
+	visibility: hidden;
+}
+
+
+
+#puzzfolio .tile {
+	display: block;
+	float: left;
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	overflow: hidden;
+	z-index: 42;
+}
+
+  .tile h2 {
+	padding: 0;
+	margin: 0;
+  }
+
+/* BEGIN TILES */
+
+#tileProjects {
+    background-color: white;
+    overflow: hidden;
+}
+
+	#tileProjects h2 {
+		padding-left: 5px;
+		color: #f6383b;
+		font-size: 4.5em;
+		font-weight: bold;
+		line-height: 1em;
+		height: 74px;
+		overflow: hidden;
+	}
+
+	#tileProjects #containerDiv {
+	    padding-left: 7px;
+	    height: 130px;
+	    overflow: hidden;
+	}
+
+	#tileProjects #projectDescription {
+	    height: 130px;
+	    width: 388px;
+	}
+
+	  #tileProjects #projectDescription p {
+	      font-family: Georgia, "Times New Roman", Times, serif;
+	      font-size:0.84em;
+	      line-height: 1.4em;
+	      margin-bottom:10px;
+	      color: #555555;
+	  }
+
+	  #tileProjects #projectDescription p a {
+	      color: #F6383B;
+	      text-decoration: none;
+	  }
+
+	    #tileProjects #projectDescription p a:hover {
+		text-decoration: underline;
+	    }
+
+	#tileProjects button {
+	    background-color:transparent;
+	    border: 0;
+	    height:20px;
+	    left:377px;
+	    position:absolute;
+	    top:179px;
+	    width:20px;
+	    color: #aaaaaa;
+	    outline: 0;
+	}
+
+	  #tileProjects button:hover {
+	      border: 1px solid #aaaaaa;
+	  }
+
+	#tileProjects dl {
+	    visibility: hidden;
+	    line-height: 30px;
+	    color: #b5b5b5;
+	    width: 400px;
+	    height: 150px;
+	    text-align: justify;
+	}
+
+	  #tileProjects dl dt {
+	      font-size: 1.2em;
+	      font-weight: bold;
+	      float: left;
+	      margin-right: 5px;
+	      letter-spacing: 1px;
+	  }
+	    	  #tileProjects dt.selected, #tileProjects dl dt:hover {
+		      color: #f6383b;
+		  }
+
+	  #tileProjects dl dd {
+	      font-size: 1.2em;
+	      display: none;
+	  }
+
+
+#tileGame {
+	background-color: #595aef;
+	color: white;
+	text-transform: uppercase;
+	padding: 0;
+}
+
+	#tileGame h2 {
+		font-size: 2.65em;
+		padding-left: 2px;
+	}
+
+
+#tileMoreProjects {
+	background-color: #fcf900;
+	overflow: hidden;
+}
+
+	#tileMoreProjects h2 {
+		position: absolute;
+		bottom: 0px;
+		left: 22px;
+		color: black;
+		font-size: 2.5em;
+		line-height: 0.9em;
+		text-transform: uppercase;
+		width: 400px;
+	}
+	
+	#tileMoreProjects dl {
+		width: 370px;
+		margin: 0; padding: 0;
+		display: block;
+		margin-left: 27px;
+		margin-top: -95px;
+	}
+
+	
+	#tileMoreProjects dl dt {
+	    width: 115px; height: 20px;
+	    margin: 0; padding: 0;
+	    display: block;
+	    font-weight: bold;
+	    float: left;
+	}
+
+ 	  #tileMoreProjects dl dt a {
+	      color: black;
+	      text-decoration: none;
+	  }
+
+	  #tileMoreProjects dl dt a:hover {
+	      text-decoration: underline;
+	  }
+
+
+	#tileMoreProjects dl dd {
+	    font-family: Georgia, "Times New Roman", Times, serif;
+	    width: 360px;
+	    display: block;
+	    font-style: italic;
+/*	    font-size: 0.9em;*/
+	}
+
+	
+
+
+
+
+
+#tileTechnologies {
+	background-color: black;
+}
+
+	#tileTechnologies h2 {
+		color: white;
+		font-size: 2.9em;
+		padding-left: 3px;
+		font-weight: bold;
+	}
+	
+	#tileTechnologies p {
+		color: white;
+		padding-left: 5px;
+		padding-right: 5px;
+		line-height: 1em;
+		font-family: "Courier New", Courier, mono;
+		visibility: hidden;
+	}
+
+#tileLinks {
+	background-color: #477e1d;
+	color: #f6f0e9;
+}
+
+	#tileLinks h2 {
+	    font-size:4.2em;
+	    letter-spacing:0;
+	    line-height:0.6em;
+	    position:relative;
+	    text-align:center;
+	    text-transform:uppercase;
+	    top:55px;
+	    width:200px;
+	    z-index:1000;
+	}
+		#tileLinks h2 span {
+			font-size: 0.69em;
+		}
+		
+		
+	#tileLinks #slidingContainer {
+	    width: 400px;
+	    height: 200px;
+	    left: 200px;
+	    top: 0;
+	    padding: 0;
+	    margin: 0;
+	    position: absolute;
+	    overflow: hidden;
+	    z-index: 900;
+        }
+
+	#tileLinks #slidingContainer p {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 1.0em;
+		line-height: 1.2em;
+		width: 200px;
+		padding-top: 30px;
+		left: 0px;
+	}
+
+	#linksDataContainer {
+	    position: absolute;
+	    width: 200px; height: 200px;
+	    top: 0; left: 200px;
+	    overflow: hidden;
+	}
+
+	#linksDataContainer ul {
+	    list-style: none;
+	}
+
+	  	#linksDataContainer ul li {
+		    width: 180px;
+		    height: 200px;
+		    display: block;
+		    position: relative;
+		}
+
+		ul#twitter li {
+		    position: relative;
+		    padding-left: 5px;
+		}
+
+		ul#twitter blockquote {
+		    font-family: Georgia, "Times New Roman", Times, serif;
+		    font-style: italic;
+		    font-size: 0.9em;
+		    position: relative;
+		}
+
+		ul#delicious  {
+		    font-family: Georgia, "Times New Roman", Times, serif;
+		    font-style: italic;
+		    font-size: 0.9em;
+		}
+
+		ul#delicious div {
+		    position: relative;
+		}
+
+		ul#delicious a.tag {
+		    font-size: 0.8em;
+		    color: #cacaca;
+		}
+
+		ul#flickr li a {
+		    display: block;
+		    border: 1px solid #cacaca;
+		    overflow: hidden;
+		    width: 180px;
+		    height: 160px;
+		    margin: 0 auto;
+		    position:absolute;
+		    top: 10px;
+		    left: 5px;
+		    
+		}
+
+		ul#blog, ul#googlereader {
+		    font-family: Georgia, "Times New Roman", Times, serif;
+		    font-style: italic;
+		    font-size: 0.9em;
+		}
+
+		ul#blog div a, ul#googlereader div a {
+		    font-style: normal;
+		}
+
+		ul#blog li div, ul#googlereader li div {
+		    position: relative;
+		}
+
+
+		ul#youtube li a {
+		    top: 25px;
+		    left: 8px;
+		    position: relative;
+		    display: block;
+		    height: 200px;
+		}
+
+		ul#youtube li img.playicon {
+		    position: relative;
+		    z-index: 15000;
+		    left: 143px; 
+		    top: -45px;
+		}
+
+		ul#lastfm div  {
+		    font-family: Georgia, "Times New Roman", Times, serif;
+		    font-size: 0.9em;
+		    position: relative;
+		}
+
+		  ul#lastfm div span {
+		      font-style: italic;
+		  }
+
+		#linksDataContainer span#profileService {
+		    position: absolute;
+		    top: 175px;
+		}
+
+		#linksDataContainer #profileButtons {
+		    left:80px;
+		    position:absolute;
+		    top:175px;
+		}
+
+		#linksDataContainer button {
+		    background-color: transparent;
+		    color: white;
+		    width: 20px;
+		    height: 20px;
+		    border: 0;
+		    padding: 0;
+		    cursor: pointer;
+		    outline: none;
+		}
+
+		#linksDataContainer button[disabled] {
+		    color: #888888;
+		    border-color: #888888;
+		}
+
+		#linksDataContainer button#profileUp {
+		    margin-left: 50px;
+		}
+
+		#linksDataContainer button:hover {
+		    border: 1px solid white;
+		}
+		
+
+	
+	#tileLinks a {
+		text-decoration: underline;
+		color: white;
+	}
+
+	#tileLinks a:hover {
+	    text-decoration: none;
+	}
+	
+	#tileLinks a:visited {
+		color: white;
+	}
+
+#tileAboutMe {
+    background-color: black;
+    color: white;
+}
+
+	#tileAboutMe h2 {
+		top: 72px;
+		left:  70px;
+		text-align: center;
+		width: 200px;
+		text-transform: uppercase;
+		font-size: 2em;
+		line-height: 1.4em;
+		position: absolute;
+	}
+
+	#tileAboutMe h2 span {
+	    position: relative;
+	    left: 0px;
+	}
+	
+	#tileAboutMe p {
+		position: absolute;
+		left:  205px;
+		width: 190px;
+		top: 8px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		line-height: 1.1em;
+		font-size: 1em;
+		text-align: right;
+	}
+	
+
+	#tileAboutMe p#second {
+		top: 112px;
+	}
+	
+
+#tileContact {
+		background-color: #f6383b;
+		color: #fafafa;
+}
+
+	#tileContact h2 {
+		width: 200px;
+		height: 200px;
+		float: left;
+		font-size: 4.5em;
+		line-height: 0.85em;
+		letter-spacing: -4px;
+		padding-left: 2px;
+		padding-top: 8px;
+	}
+	
+
+	#contactData {
+	    width: 192px;
+	    height: 200px;
+	    padding: 0px;
+	    padding-left: 5px;
+	    padding-right: 5px;
+	}
+
+	#contactData .email {
+	    font-weight: bold;
+	    color: white;
+	    font-size: 1.2em;
+	}
+	
+	#contactData a {
+	    color: white;
+	    
+	}
+
+	  #contactData a:hover {
+	      text-decoration: none;
+	  }
+
+	#contactContainer {
+	    width: 400px;
+	    left: 200px;
+	    height: 200px;
+	    position: absolute;
+	}
+
+	  #contactContainer p {
+	      padding-top: 20px;
+	  }
+
+	  #contactContainer p:first-child {
+	      padding-top: 37px;
+	  }
+
+	#contactContainer form {
+	    width: 200px;
+	    height: 200px;
+	    padding-left: 2px;
+	    padding-top: 2px;
+	}
+
+	  #contactContainer form label {
+	      font-size: 0.8em;
+	      height: 10px;
+	  }
+
+	    #contactContainer form label#labelName, #contactContainer form label#labelEmail {
+		width: 45px;
+		float: left;
+		padding-top: 3px;
+	    }
+
+	    #contactContainer form label#labelEmail { clear: both; }
+
+	  #contactContainer form button#inputSubmit {
+	      border: 1px solid #ffffff;
+	      left: 125px; 
+	      position: absolute; 
+	      top: 375px;
+	      width: 70px;
+	      text-align: center;
+	  }
+
+	  #contactContainer form button#formHide {
+	      background-color: transparent;
+	      color: white;
+	      width: 20px;
+	      height: 20px;
+	      border: 0;
+	      padding: 0;
+	      cursor: pointer;
+	      outline: none;
+	      position: relative;
+	  }
+
+	  #contactContainer form input, #contactContainer form textarea {
+	      font-size: 0.75em;
+	      border: 1px solid #ffeeee;
+	      font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	  }
+
+	    #contactContainer form input#inputName, #contactContainer form input#inputEmail {
+		width: 145px;
+		clear: both;
+	    }
+
+	    #contactContainer form input#inputQuuxor {
+		display: none;
+	    }
+
+	    #contactContainer form textarea {
+		width: 191px;
+		height: 90px;
+		resize: none;
+		-webkit-appearance: none;
+		outline: 0;
+	    }
+
+
+#tileMyName {
+    font-size: 1.5em;
+	background: #FFFFFF url(../images/tileMyName-background.gif) no-repeat right center;
+}
+
+	#tileMyName h1 {
+		font-size: 1.7em;
+		line-height: 1em;
+		padding-top: 30px;
+		width: 200px;
+		padding-left: 5px;
+	 }
+    
+    
+    #tileMyName h3 {
+		color: #555555;
+		line-height:  1em;
+		padding-top: 10px;
+		padding-left: 5px;
+		font-size: 0.9em;
+		margin-top: 10px;
+		width: 200px;
+	}
+	
+	#tileMyName p {
+		width: 130px;
+		top: 65px;
+		position: absolute;
+		left: 195px;
+		font: 0.9em/1.1em Georgia, "Times New Roman", Times, serif;
+		text-align: right;
+	}
+   
+/* initial positions 
+
+#tileProjects {
+    top: 0px; left: 0px;
+    z-index: 1;
+}
+
+#tileMoreProjects {
+    top: 0px; left: 200px;
+    z-index: 2;
+}
+
+#tileGame {
+    top: 0px; left: 400px;
+    z-index: 3;
+}
+
+#tileLinks {
+    top: 200px; left: 0px;
+    z-index: 4;
+}
+
+#tileContact {
+    top: 200px; left: 200px;
+    z-index: 5;
+}
+
+#tileTechnologies {
+    top: 200px; left: 400px;
+    z-index: 6;
+}
+
+#tileAboutMe {
+    top: 400px; left: 0px;
+    z-index: 7;
+}
+
+#tileMyName {
+    top: 400px; left: 200px;
+    z-index: 8;
+}
+
+*/
+
+   
+/* END TILES */
+
+/* BEGIN misc */
+
+#cursor {
+    /*text-decoration: blink;*/
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+/* END misc */
